@@ -180,6 +180,8 @@ VENDOR_SECURITY_PATCH := 2021-09-01
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
+
 
 # Shims
 TARGET_LD_SHIM_LIBS := vendor/lib/hw/audio.primary.atoll.so|fakelogprint.so
