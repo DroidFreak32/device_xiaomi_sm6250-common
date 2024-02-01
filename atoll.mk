@@ -453,3 +453,6 @@ PRODUCT_BOOT_JARS += \
 
 # Inherit proprietary targets
 $(call inherit-product, vendor/xiaomi/sm6250-common/sm6250-common-vendor.mk)
+
+# Import Addons
+$(call inherit-product, vendor/addons/config.mk)
